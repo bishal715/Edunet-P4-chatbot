@@ -107,21 +107,27 @@ def main():
 
     elif choice == "📜 Conversation History":
         st.header("📜 Conversation History")
+        
+        # Check if the file exists
         if os.path.exists('chat_log.csv'):
             with open('chat_log.csv', 'r', encoding='utf-8') as csvfile:
                 csv_reader = csv.reader(csvfile)
                 history = list(csv_reader)
             
-            if history:
+            # Check if the CSV file contains any rows
+            if len(history) > 0:  # Ensure there is data in the file
                 for entry in history:
-                    st.markdown(f"**🗣 User:** {entry[0]}")
-                    st.markdown(f"**🤖 Chatbot:** {entry[1]}")
-                    st.markdown(f"⏰ **Timestamp:** {entry[2]}")
-                    st.markdown("---")
+                    if len(entry) >= 3:  # Ensure each row has enough columns
+                        st.markdown(f"**🗣 User:** {entry[0]}")
+                        st.markdown(f"**🤖 Chatbot:** {entry[1]}")
+                        st.markdown(f"⏰ **Timestamp:** {entry[2]}")
+                        st.markdown("---")
             else:
-                st.warning("No conversation history found.")
+                st.warning("No conversation history found. The file is empty.")
         else:
             st.warning("No conversation history available yet.")
+
+
 
     elif choice == "ℹ️ About":
         st.header("ℹ️ About the Chatbot")
