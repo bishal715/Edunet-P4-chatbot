@@ -6,28 +6,302 @@
             "Hello",
             "Hey",
             "How are you",
-            "What's up"
+            "What's up",
+            "Good morning",
+            "Good afternoon",
+            "Good evening",
+            "Hey there","hi", "hello", "hey", "greetings", "morning", "evening", "welcome", "howdy", "salutations", "bonjour","bro", 
+            "hola", "what's up", "sup", "yo", "aloha", "namaste", "ciao", "salve", "shalom", "how are you", "good day"
+            
         ],
         "responses": [
-            "Hi there",
-            "Hello",
-            "Hey",
-            "I'm fine, thank you",
-            "Nothing much"
+            "Hello! How can I assist you today?",
+            "Hi there! How can I help you?",
+            "Hey! What's up?",
+            "Good morning! How can I assist you today?",
+            "Good afternoon! How's your day going?",
+            "Good evening! How can I help you tonight?",
+            "Hello! How are you doing today?"
         ]
     },
     {
-        "tag": "goodbye",
+        "tag": "farewell",
         "patterns": [
-            "Bye",
-            "See you later",
             "Goodbye",
-            "Take care"
+            "See you later",
+            "Bye",
+            "Take care",
+            "See you soon",
+            "Catch you later",
+            "Farewell","goodbye", "bye", "farewell", "see ya", "adieu", "take care", "so long", "catch you", "peace", "later", 
+            "hasta", "sayonara", "adios", "bon voyage", "ciao", "good night", "see you", "cheerio", "until next time", "au revoir"
+
         ],
         "responses": [
-            "Goodbye",
-            "See you later",
-            "Take care"
+            "Goodbye! Have a great day!",
+            "See you soon! Take care!",
+            "Take care, have a wonderful day!",
+            "Catch you later! Stay safe!",
+            "Farewell! It was nice talking to you!",
+            "Goodbye! Come back if you need anything!"
+        ]
+    },
+    {
+        "tag": "how_are_you",
+        "patterns": [
+            "How are you?",
+            "How's it going?",
+            "How are you doing?",
+            "What's up?",
+            "How's everything?","how are you", "how's it going", "how's life", "how's everything", "how's your day", "what's up", "what's new", 
+            "how's everything going", "how are things", "what's good", "how do you do", "how's your health", "you good"
+
+        ],
+        "responses": [
+            "I'm doing great, thanks for asking! How about you?",
+            "I'm good, thanks! How can I assist you today?",
+            "I'm doing well, thanks for asking! How can I help?",
+            "I'm doing fine, thank you! How are you?",
+            "Everything's going well, thank you! How's your day?"
+        ]
+    },
+    {
+        "tag": "asking_name",
+        "patterns": [
+            "What's your name?",
+            "Who are you?",
+            "Tell me your name","what's your name", "who are you", "may I know your name", "name please", "what should I call you", 
+            "how should I address you", "can I know your name", "who's this", "who is this", "what is your name"
+
+        ],
+        "responses": [
+            "I'm your assistant. How can I help you today?",
+            "I'm a friendly chatbot here to help you out!",
+            "I don't have a name, but you can call me anything you like!"
+        ]
+    },
+    {
+        "tag": "help",
+        "patterns": [
+            "Can you help me?",
+            "I need assistance",
+            "I don't understand",
+            "What can you do?","help", "assist", "support", "guide", "aid", "assist me", "can you help", "need help", "help me out", 
+            "please help", "I need assistance", "help me", "can you assist", "I need support", "guide me"
+
+        ],
+        "responses": [
+            "Sure! How can I assist you today?",
+            "I can help with many things! What do you need help with?",
+            "Tell me your issue, I'll try my best to assist you."
+        ]
+    },
+    {
+        "tag": "faq",
+        "patterns": [
+            "What are your hours?",
+            "Where are you located?",
+            "What services do you offer?",
+            "How can I contact support?"
+        ],
+        "responses": [
+            "Our hours are from 9 AM to 5 PM, Monday to Friday.",
+            "We are located at 123 Main Street, City.",
+            "You can contact support at support@company.com.",
+            "We offer various services including consulting, support, and more."
+        ]
+    },
+    {
+        "tag": "weather",
+        "patterns": [
+            "What's the weather like today?",
+            "Is it raining outside?",
+            "What's the temperature?",
+            "Will it be sunny tomorrow?","weather", "rain", "sun", "storm", "snow", "cloudy", "wind", "hail", "fog", "thunder", "lightning", 
+            "temperature", "forecast", "humidity", "breeze", "overcast", "drizzle", "tornado", "hurricane", "clear", 
+            "heatwave", "cold", "warm", "chilly", "blizzard", "climate", "showers", "precipitation"
+
+        ],
+        "responses": [
+            "The current temperature is 25°C and it's partly cloudy.",
+            "It looks like it's going to rain later today.",
+            "The weather is sunny with a high of 28°C.",
+            "Tomorrow will be mostly sunny with a chance of rain in the evening."
+        ]
+    },
+    {
+        "tag": "time_date",
+        "patterns": [
+            "What time is it?",
+            "What's the date today?",
+            "What's today's day?","time","time", "date", "clock", "hour", "minute", "second", "morning", "afternoon", "evening", "night", 
+            "today", "yesterday", "tomorrow", "week", "month", "year", "season", "calendar", "timeline", "deadline", 
+            "now", "later", "soon", "past", "future", "late", "early", "timeframe", "midnight", "noon", "dawn", "dusk"
+
+        ],
+        "responses": [
+            "It's 2:30 PM right now.",
+            "Today is December 6, 2024.",
+            "It's Thursday, December 6, 2024."
+        ]
+    },
+    {
+        "tag": "name",
+        "patterns": [
+            "What is your name?",
+            "Who are you?",
+            "Tell me your name"
+        ],
+        "responses": [
+            "I'm your assistant. How can I help?",
+            "I'm your chatbot. What can I assist you with today?",
+            "I'm an AI bot here to help you!","name", "identity", "title", "nickname", "full name", "first name", "last name", "surname", "alias", 
+            "moniker", "label", "designation", "handle", "appellation", "tag", "pseudonym", "initials", "character", 
+            "designation", "eponym"
+
+        ]
+    },
+    {
+        "tag": "food",
+        "patterns": [
+            "What's for dinner?",
+            "What should I eat?",
+            "What's your favorite food?",
+            "Do you have any food recommendations?","food","rice","vegetables","food", "meal", "snack", "dish", "cuisine", "breakfast", "lunch", "dinner", "dessert", "appetizer", 
+            "salad", "soup", "sandwich", "burger", "pizza", "pasta", "sushi", "cake", "ice cream", "fruit", "vegetables", 
+            "meat", "chicken", "beef", "fish", "seafood", "cheese", "bread", "rice", "pasta", "noodles", "smoothie","hungry"
+
+        ],
+        "responses": [
+            "How about some pizza? It's always a great choice!",
+            "Maybe try a healthy salad with some grilled chicken!",
+            "I recommend sushi or a burger today."
+        ]
+    },
+    {
+        "tag": "health",
+        "patterns": [
+            "How can I stay healthy?",
+            "What are some healthy habits?",
+            "Can you give me a health tip?",
+            "How do I lose weight?","health", "fitness", "wellness", "diet", "exercise", "nutrition", "strength", "endurance", "energy", 
+            "hydration", "rest", "recovery", "meditation", "mental health", "cardio", "yoga", "strengthen", "immune", 
+            "balance", "stamina", "vitality", "flexibility", "workout", "sleep", "immune system", "hygiene", "medicine"
+
+        ],
+        "responses": [
+            "Drink plenty of water, eat a balanced diet, and get enough sleep.",
+            "Exercise regularly and try to manage stress.",
+            "For a healthy lifestyle, maintain a good sleep schedule and stay active!"
+        ]
+    },
+    {
+        "tag": "sports",
+        "patterns": [
+            "What sports do you like?",
+            "Who won the last match?",
+            "What's your favorite team?",
+            "Tell me about football","soccer", "basketball", "baseball", "tennis", "rugby", "hockey", "volleyball", "cricket", "swimming", "gymnastics", 
+            "football", "athletics", "boxing", "wrestling", "cycling", "archery", "badminton", "golf", "track", "skiing", 
+            "skating", "surfing", "karate", "judo", "sailing", "fencing", "rowing", "motorsport", "squash", "tabletennis", 
+            "handball", "wrestler", "skateboarding", "climbing", "snowboarding", "snowshoeing", "lacrosse", "canyoning", 
+            "polo", "ultimate", "pickleball", "equestrian", "hunting", "billiards", "bowling", "darts", "e-sports"
+            
+        ],
+        "responses": [
+            "I love basketball and football! How about you?",
+            "I'm not sure who won the last match, but I can look it up for you!",
+            "Football is a great sport! It's a team game played on a rectangular field."
+        ]
+    },
+    {
+        "tag": "technology",
+        "patterns": [
+            "What's the latest tech news?",
+            "Can you tell me about new gadgets?",
+            "Do you know about AI?",
+            "How do I set up a new phone?","technology", "innovation", "computer", "software", "hardware", "internet", "AI", "machine learning", 
+            "data", "cloud", "network", "robotics", "automation", "smartphone", "gadget", "app", "website", "programming", 
+            "coding", "digital", "virtual", "tech", "cybersecurity", "encryption", "blockchain", "IoT", "3D printing", 
+            "VR", "AR", "database", "analytics", "wireless", "sensor", "AI assistant", "big data", "web development"
+
+        ],
+        "responses": [
+            "AI is advancing rapidly! There are many new tools that are revolutionizing industries.",
+            "The latest tech news is about the new AI-powered gadgets and their applications in healthcare.",
+            "To set up your new phone, follow the instructions in the setup guide or let me know if you need help!"
+        ]
+    },
+    {
+        "tag": "travel",
+        "patterns": [
+            "Where should I travel?",
+            "What are some good travel destinations?",
+            "Tell me about Paris",
+            "What's the best time to visit Japan?","travel", "trip", "journey", "vacation", "holiday", "tourism", "adventure", "exploration", "destination", 
+            "tour", "sightseeing", "excursion", "backpacking", "roadtrip", "flight", "airport", "hotel", "hostel", 
+            "resort", "cruise", "passport", "luggage", "ticket", "map", "guide", "culture", "destination", 
+            "itinerary", "route", "transportation", "landscape", "tourist", "staycation", "expedition", "explore"
+
+        ],
+        "responses": [
+            "Paris is a great destination! You can visit the Eiffel Tower and explore beautiful museums.",
+            "Japan is amazing! The best time to visit is in spring or autumn for perfect weather and beautiful views.",
+            "How about visiting the Maldives? Beautiful beaches and luxurious resorts."
+        ]
+    },
+    {
+        "tag": "shopping",
+        "patterns": [
+            "Where can I buy clothes online?",
+            "Do you know any good shopping websites?",
+            "What's trending in fashion?",
+            "Tell me about the latest sales","shopping", "store", "mall", "market", "retail", "sale", "discount", "purchase", "cart", "checkout", 
+            "product", "item", "goods", "customer", "receipt", "shopping bag", "storefront", "deal", "coupon", 
+            "payment", "payment gateway", "fashion", "electronics", "groceries", "clothing", "accessories", 
+            "online", "shopping list", "brand", "bargain", "shopper", "boutique", "storehouse", "consumer"
+
+        ],
+        "responses": [
+            "You can check out websites like Amazon, Zara, and ASOS for great deals on clothes.",
+            "Fashion trends this season include oversized jackets, denim, and comfy sneakers.",
+            "Many online stores are having winter sales right now! Check out seasonal discounts on Amazon and Flipkart."
+        ]
+    },
+    {
+        "tag": "motivation",
+        "patterns": [
+            "I need some motivation",
+            "Can you motivate me?",
+            "I feel down, can you help?",
+            "Give me a quote","motivation", "inspiration", "goal", "drive", "ambition", "determination", "focus", "success", 
+            "achievement", "perseverance", "confidence", "mindset", "resilience", "passion", "dedication", "vision", 
+            "commitment", "enthusiasm", "empowerment", "growth", "courage", "strength", "discipline", "hard work", 
+            "believe", "positive", "willpower", "hustle", "grit", "energy", "focus", "challenge"
+
+        ],
+        "responses": [
+            "Remember, 'The only way to do great work is to love what you do.' - Steve Jobs",
+            "Don't give up! Every day is a new opportunity to improve yourself.",
+            "Here's a quote for you: 'Believe you can and you're halfway there.' - Theodore Roosevelt"
+        ]
+    },
+    {
+        "tag": "time_management",
+        "patterns": [
+            "How can I manage my time better?",
+            "Give me tips on time management",
+            "I feel overwhelmed with work, any advice?",
+            "How can I be more productive?","time", "management", "schedule", "planning", "prioritization", "efficiency", "productivity", "deadline", 
+            "task", "goal", "focus", "organization", "delegation", "calendar", "agenda", "time-blocking", "routine", 
+            "consistency", "motivation", "effort", "timing", "execution", "procrastination", "distraction", "balance", 
+            "commitment", "planning", "deadline", "timeframe", "self-discipline", "organization", "workload"
+
+        ],
+        "responses": [
+            "Try using a planner or an app to organize your tasks and set deadlines.",
+            "Time management is about prioritizing. Focus on one task at a time.",
+            "Take breaks, plan your day ahead, and break tasks into smaller, manageable pieces."
         ]
     },
     {
@@ -42,20 +316,6 @@
             "You're welcome",
             "No problem",
             "Glad I could help"
-        ]
-    },
-    {
-        "tag": "about",
-        "patterns": [
-            "What can you do",
-            "Who are you",
-            "What are you",
-            "What is your purpose"
-        ],
-        "responses": [
-            "I am a chatbot",
-            "My purpose is to assist you",
-            "I can answer questions and provide assistance"
         ]
     },
     {
@@ -85,17 +345,6 @@
         ]
     },
     {
-        "tag": "weather",
-        "patterns": [
-            "What's the weather like",
-            "How's the weather today"
-        ],
-        "responses": [
-            "I'm sorry, I cannot provide real-time weather information.",
-            "You can check the weather on a weather app or website."
-        ]
-    },
-    {
         "tag": "budget",
         "patterns": [
             "How can I make a budget",
@@ -118,18 +367,6 @@
         "responses": [
             "A credit score is a number that represents your creditworthiness. It is based on your credit history and is used by lenders to determine whether or not to lend you money. The higher your credit score, the more likely you are to be approved for credit.",
             "You can check your credit score for free on several websites such as Credit Karma and Credit Sesame."
-        ]
-    },
-    {
-        "tag": "name",
-        "patterns": [
-            "What's your name",
-            "Do you have a name",
-            "What should I call you"
-        ],
-        "responses": [
-            "You can call me Chatbot.",
-            "My name is Chatbot."
         ]
     },
     {
@@ -179,18 +416,6 @@
         ]
     },
     {
-        "tag": "food",
-        "patterns": [
-            "What's your favorite food",
-            "Do you like to eat",
-            "Tell me about food"
-        ],
-        "responses": [
-            "As a chatbot, I don't eat, but I'm here to help with any questions you have about food!",
-            "I may not have taste buds, but I can assist you in finding recipes or restaurants!"
-        ]
-    },
-    {
         "tag": "movies",
         "patterns": [
             "What's your favorite movie",
@@ -200,18 +425,6 @@
         "responses": [
             "As an AI, I don't watch movies, but I can suggest some popular ones like The Shawshank Redemption, Inception, or The Godfather.",
             "I may not have personal preferences, but I can help you find movies based on your taste!"
-        ]
-    },
-    {
-        "tag": "technology",
-        "patterns": [
-            "What's the latest tech news",
-            "Tell me about technology",
-            "What's new in tech"
-        ],
-        "responses": [
-            "As an AI language model, I don't have real-time data, but you can check technology news websites for the latest updates.",
-            "Technology is constantly evolving. Stay updated with tech blogs and news sites to know about the latest advancements!"
         ]
     },
     {
@@ -239,18 +452,6 @@
         ]
     },
     {
-        "tag": "sports",
-        "patterns": [
-            "Tell me about sports",
-            "What's your favorite sport",
-            "Any sports news"
-        ],
-        "responses": [
-            "While I don't have personal preferences, sports can be exciting! Keep an eye on sports news websites for the latest updates and scores.",
-            "Sports are a great way to stay active and entertained. There's a wide range of sports to explore and enjoy!"
-        ]
-    },
-    {
         "tag": "pets",
         "patterns": [
             "Do you have any pets",
@@ -260,18 +461,6 @@
         "responses": [
             "As an AI, I don't have pets, but I'm interested in animals and can answer your questions about them.",
             "Pets can bring joy and companionship into our lives. Many people love keeping dogs, cats, birds, and more as their pets."
-        ]
-    },
-    {
-        "tag": "travel",
-        "patterns": [
-            "Where is a good place to travel",
-            "Recommend me a travel destination",
-            "Tell me about your favorite travel spot"
-        ],
-        "responses": [
-            "I'm just a chatbot, so I don't travel, but there are many beautiful destinations around the world to explore. It depends on your preferences, such as beaches, mountains, historical sites, or bustling cities.",
-            "Traveling allows you to experience different cultures, try new cuisines, and create lasting memories."
         ]
     },
     {
@@ -296,18 +485,6 @@
         "responses": [
             "Education is the process of acquiring knowledge, skills, values, and attitudes. It plays a crucial role in personal and societal development.",
             "Studying effectively involves setting clear goals, creating a conducive study environment, staying organized, taking regular breaks, and seeking help when needed."
-        ]
-    },
-    {
-        "tag": "health",
-        "patterns": [
-            "How to stay healthy",
-            "Tell me about health tips",
-            "What's the importance of fitness"
-        ],
-        "responses": [
-            "To stay healthy, maintain a balanced diet, engage in regular physical activity, get enough sleep, manage stress, and avoid harmful habits.",
-            "Fitness is essential for overall well-being and can improve your mood, energy levels, and longevity."
         ]
     },
     {
@@ -548,18 +725,6 @@
         "responses": [
             "Artificial intelligence is the simulation of human intelligence in machines, enabling them to learn and perform tasks.",
             "AI has diverse applications, including voice assistants, self-driving cars, recommendation systems, and medical diagnostics."
-        ]
-    },
-    {
-        "tag": "motivation",
-        "patterns": [
-            "I need some motivation",
-            "Tell me an encouraging quote",
-            "How to overcome obstacles"
-        ],
-        "responses": [
-            "Believe in yourself. You have the strength to overcome any obstacle and achieve your dreams!",
-            "Obstacles are stepping stones to success. Embrace challenges as opportunities for growth and learning."
         ]
     },
     {
@@ -1137,18 +1302,6 @@
         "responses": [
             "Parenting tips involve active listening, setting boundaries, and fostering open communication with your children.",
             "Balancing work and family life can be achieved by prioritizing tasks, setting realistic expectations, and seeking support when needed."
-        ]
-    },
-    {
-        "tag": "time_management",
-        "patterns": [
-            "Tell me about time management techniques",
-            "How to stay productive",
-            "Avoiding procrastination"
-        ],
-        "responses": [
-            "Time management techniques include creating to-do lists, using time blocks, and setting specific goals.",
-            "To stay productive, identify your most productive hours, eliminate distractions, and take regular breaks."
         ]
     },
     {

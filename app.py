@@ -12,7 +12,7 @@ from sklearn.linear_model import LogisticRegression
 # Handle SSL and NLTK data
 ssl._create_default_https_context = ssl._create_unverified_context
 nltk.data.path.append(os.path.abspath("nltk_data"))
-# nltk.download('punkt')
+nltk.download('punkt')
 
 # Load intents from the JSON file
 file_path = 'intents.json'
@@ -82,27 +82,21 @@ def main():
         if "messages" not in st.session_state:
             st.session_state.messages = []
 
-        # Input handling
-        if "input_temp" not in st.session_state:
-            st.session_state.input_temp = ""
+        # Display form with clear-on-submit functionality
+        with st.form(key="chat_form", clear_on_submit=True):
+            user_input = st.text_input("Your Message:", placeholder="Type something here...")
+            submit_button = st.form_submit_button("Send")
 
-        # Text input for the user
-        user_input = st.text_input("Your Message:", st.session_state.input_temp, key="user_input", placeholder="Type something here...")
+        if submit_button and user_input:  # Check for non-empty input and submission
+            response = chatbot(user_input)  # Get chatbot response
 
-        if st.button("Send"):
-            if user_input:  # Check for non-empty input
-                response = chatbot(user_input)  # Get chatbot response
-                
-                # Append to conversation history
-                st.session_state.messages.append({"user": user_input, "bot": response})
+            # Append to conversation history
+            st.session_state.messages.append({"user": user_input, "bot": response})
 
-                # Log conversation to a file
-                with open('chat_log.csv', 'a', newline='', encoding='utf-8') as csvfile:
-                    csv_writer = csv.writer(csvfile)
-                    csv_writer.writerow([user_input, response, datetime.now()])  # Now it works
-
-                # Reset the input field after submission
-                st.session_state.input_temp = ""  # Reset state
+            # Log conversation to a file
+            with open('chat_log.csv', 'a', newline='', encoding='utf-8') as csvfile:
+                csv_writer = csv.writer(csvfile)
+                csv_writer.writerow([user_input, response, datetime.now()])  # Log timestamped interaction
 
         # Display only the latest chat message
         if st.session_state.messages:
